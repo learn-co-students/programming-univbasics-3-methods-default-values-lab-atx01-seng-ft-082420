@@ -6,8 +6,8 @@ describe '#meal_choice' do
     expect($stdout).to receive(:puts).with("A plate of tofu with broccoli and macaroni.")
     meal_choice("broccoli", "macaroni")
   end
-  
-  it 'should default to meat for the protein' do
+
+  it 'should default to tofu for the protein' do
     expect(meal_choice("broccoli", "macaroni")).to eq("A plate of tofu with broccoli and macaroni.")
   end
 
@@ -15,5 +15,5 @@ describe '#meal_choice' do
     expect(meal_choice("broccoli", "macaroni", "roast beef")).to eq("A plate of roast beef with broccoli and macaroni.")
   end
 
-  
+
 end
